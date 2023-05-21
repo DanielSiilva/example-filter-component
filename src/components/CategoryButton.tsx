@@ -7,10 +7,5 @@ interface CategoryButtonProps {
 
 
 export function CategoryButton({name, setCategory}:CategoryButtonProps){
-
-    return <button
-                onClick={()=> setCategory(name)}
-            >
-                {name}
-            </button>
+    return <button onClick={()=> setCategory(name)}>{name}</button>
 }

@@ -11,11 +11,11 @@ interface ProductListProps  {
 }
 
 export function ProductList({products, category}:ProductListProps){
-    const filterdedProducts = products.filter(product => product.category === category )
+    const filteredProducts = products.filter(product => product.category === category )
 
     return (
         <div>
-            {filterdedProducts.map(product => (
+            {filteredProducts.map(product => (
                 <div key={product.id}>{product.name}</div>
             ))}
         </div>
